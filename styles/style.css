@@ -99,10 +99,61 @@
   top: 30px;
 }
 
+.description {
+/* отступ от блока header */
+  padding-top: 100px;
+}
 
+.two-columns {
+/* задал ширину */
+  width: 80%;
+/* выравнивание по центру страницы */
+  display: flex;
+  margin: auto;
+/* расстояние между колонками */
+  justify-content: space-between;
+}
 
+.two-columns__brief {
+/* убрал отступы */
+  margin: 0;
+/* задал ширину блока */
+  min-width: 175px;
+  max-width: 175px;
+/* задал цвет шрифта */
+  color: #2f80ed;
+/* настройки шрифта */
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
 
+.two-columns__main-text {
+/* задал ширину */
+  width: 80%;
+  min-width: 784px;
+/* расстояние между параграфами */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 30px;
+/* настройки шрифта */
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
 
+.two-columns__span-accent {
+  /* настройки шрифта */
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.two-columns__paragraph {
+/* убрал отступы */
+  margin: 0;
+}
 
 
 
