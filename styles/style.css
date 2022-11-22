@@ -362,6 +362,7 @@
 }
 
 .footer__column-link {
+  display: block;
   /* настройки шрифта */
   color: white;
   line-height: 30px;
