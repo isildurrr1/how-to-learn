@@ -21,8 +21,6 @@
 /* центрирование заголовка h1 по центру */
   display: flex;
   align-items: center;
-/* задал padding слева для всего header,
-чтобы не задавать отсуп специально для каждого блока */
   padding-left: 64px;
 }
 
@@ -57,6 +55,7 @@
 /* позиция абсолютно */
   position: absolute;
   bottom: 30px;
+  left: 64px;
 /* задал ширину */
   width: 388px;
 /* вывел расположение на передний план */
@@ -95,8 +94,10 @@
 
 /* позиционируем логотип в header абсолютно */
 .logo_place_header {
+  background-image: url(../images/logo_place_header.svg);
   position: absolute;
   top: 30px;
+  left: 64px;
 }
 
 .description {
@@ -287,18 +288,97 @@
 }
 
 .kaufman {
-  position: relative;
-  background-color: #1f1f1f;
+  /* настройка отступов */
   padding: 90px 0 90px 0;
+  /* для абс позиционирования чайлд элементов */
+  position: relative;
+  /* задаю цвет фона и скрываю выступающие элементы */
+  background-color: #1f1f1f;
   overflow: hidden;
   z-index: 1;
 }
 
 .kaufman__triangle {
+  /* размеры */
   width: 877px;
   height: 877px;
+  /* абсолютное позиционирование триугольника */
   position: absolute;
   right: -210px;
   top: 0;
   z-index: -1;
+}
+
+.footer {
+  /* размеры отступов (вверх и низ)*/
+  padding: 60px 0 40px 0;
+  /* цвет фона */
+  background-color: #1f1f1f;
+}
+
+.footer__columns {
+  /* для абс позиционирования чайлд элементов */
+  position: relative;
+  /* размеры и выравнивание */
+  min-height: 250px;
+  width: 90%;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.footer__column {
+  /* цвет шрифта */
+  color: white;
+}
+
+.column_content_copyright {
+  /* базовый размер флекс элемента */
+  flex-basis: 711px;
+}
+
+.logo_place_footer {
+  /* задаю картинку логотипа и выравниваю */
+  background-image: url(../images/logo_place_footer.svg);
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer__author {
+  /* выравнивание по левому нижнему краю с отступами */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 18px 0 18px 0;
+  /* настройки шрифта */
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__column-links {
+  margin: 20px 0 16px 0;
+}
+
+.footer__column-link {
+  /* настройки шрифта */
+  color: white;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.footer__column-heading {
+  margin: 0;
+  /* настройки шрифта */
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer__social-icon {
+  width: 16px;
+  height: 16px;
 }

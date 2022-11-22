@@ -15,7 +15,7 @@
     <!-- шапка сайта блок header -->
     <header class="header">
       <!-- логотип яндекса -->
-      <img src="./images/logo_place_header.svg" alt="yandex_logo" class="logo logo_place_header">
+      <div class="logo logo_place_header"></div>
       <!-- заголовок -->
       <h1 class="header__title">Научиться учиться</h1>
       <!-- подзаголовок -->
@@ -114,9 +114,13 @@
 
       <!-- секция блок kaufman -->
       <section class="kaufman">
+        <!-- заголовок темная тема  -->
         <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
+        <!-- подзаголовок темная тема  -->
         <h4 class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</h4>
+        <!-- таблица с блоками в темной теме  -->
         <div class="table table_theme_dark">
+          <!-- маленький блок  -->
           <div class="table__cell table__cell_theme_dark">
             <!-- заголовок блока  -->
             <h5 class="table__heading table__heading_theme_dark">1</h5>
@@ -167,7 +171,44 @@
 
     <!-- подвал сайта блок footer -->
     <footer class="footer">
-
+      <!-- 3 колонки -->
+      <div class="footer__columns">
+        <!-- колонка с логотипом и копирайт символом -->
+        <div class="footer__column column_content_copyright">
+          <!-- логотип  -->
+          <div class="logo logo_place_footer"></div>
+          <!-- имя автора  -->
+          <p class="footer__author">&COPY; Виктор Абанькин</p>
+        </div>
+        <!-- колонка с информацией  -->
+        <div class="footer__column column_content_info">
+          <!-- заголовок колонки  -->
+          <h6 class="footer__column-heading">О практикуме</h6>
+          <!-- ссылки с информацией  -->
+          <div class="footer__column-links">
+            <a href="#" class="footer__column-link">Главная</a><br>
+            <a href="#" class="footer__column-link">Концепция</a><br>
+            <a href="#" class="footer__column-link">Наставники</a><br>
+          </div>
+        </div>
+        <!-- колонка с ссылками на соцсети  -->
+        <div class="footer__column column_content_social">
+          <!-- заголовок  -->
+          <h6 class="footer__column-heading">Соцсети</h6>
+          <!-- ссылки  -->
+          <div class="footer__column-links">
+            <a href="#" class="footer__column-link">
+              <img src="./youtube-icon.svg" alt="youtube-icon" class="footer__social-icon">
+              YouTube</a><br>
+            <a href="#" class="footer__column-link">
+              <img src="./images/vk_color_white.svg" alt="vk-icon" class="footer__social-icon">
+              Вконтакте</a><br>
+            <a href="#" class="footer__column-link">
+              <img src="./images/tiktok-icon.svg" alt="tiktok-icon" class="footer__social-icon">
+              TikTok</a><br>
+          </div>
+        </div>
+      </div>
     </footer>
   </div>
 </body>
