@@ -144,7 +144,7 @@
 }
 
 .two-columns__span-accent {
-  /* настройки шрифта */
+/* настройки шрифта */
   line-height: 34px;
   font-size: 24px;
   font-weight: 600;
@@ -155,15 +155,56 @@
   margin: 0;
 }
 
+.digits {
+/* сдулал отступы снизу и сверху */
+  padding: 100px 0 100px 0;
+}
 
+.section-title {
+/* задал размер заголовка */
+  width: 60%;
+/* выравнивание по центру */
+  display: flex;
+  margin: auto;
+  justify-content: center;
+/* настройки шрифта */
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+}
 
+.section-subtitle {
+/* задал размер заголовка */
+  width: 60%;
+/* выравнивание по центру */
+  display: flex;
+  margin: auto;
+  justify-content: center;
+/* отступ от заголовка */
+  margin-top: 20px;
+/* настройки шрифта */
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
 
+.table {
+/* размер */
+  width: 1100px;
+/* выравнивание расстояния между блоками */
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+/* расстояние между строками блоков */
+  row-gap: 60px;
+  padding-top: 60px;
+}
 
-
-
-
-
-
+.table__cell {
+/* ширина одного маленького блока */
+  width: 250px;
+}
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
@@ -173,4 +214,25 @@
   margin-top: 80px;
 
 }
+
+.table__heading {
+/* убрал отступы */
+  margin: 0;
+/* настройки шрифта */
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.table__text {
+/* убрал отступы по умолчанию, а сверху добавил паддинг */
+  margin: 0;
+  padding-top: 20px;
+/* настройки шрифта */
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+
 
