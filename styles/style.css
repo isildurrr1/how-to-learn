@@ -10,17 +10,109 @@
 }
 
 .header {
+/* установили ограничения для секции */
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
+/* установили позиционирование */
+  position: relative;
+/* установили цвет заднего фона */
+  background-color: #f2f2f2;
+/* центрирование заголовка h1 по центру */
+  display: flex;
+  align-items: center;
+/* задал padding слева для всего header,
+чтобы не задавать отсуп специально для каждого блока */
+  padding-left: 64px;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
+  /* ниже задали цвет квадрата */
+  background-color: #2f80ed;
+/* позиционируем квадрат абсолютно в header */
+  position: absolute;
+  top: 64px;
+  right: 0;
 }
+
+.header__title {
+/* убрал все отсупы */
+  margin: 0;
+/* задал ширину */
+  width: 730px;
+/* вывел расположение на передний план */
+  z-index: 2;
+/* настройки шрифта */
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: 600;
+}
+
+.header__subtitle {
+/* убрал все отсупы */
+  margin: 0;
+/* позиция абсолютно */
+  position: absolute;
+  bottom: 30px;
+/* задал ширину */
+  width: 388px;
+/* вывел расположение на передний план */
+  z-index: 2;
+/* настройки шрифта */
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.header__link {
+/* убираю нижнее подчеркивание */
+  text-decoration: none;
+/* задаю цвет шрифта */
+  color: #2f80ed;
+}
+
+.header__main-illustration {
+/* задаю размер  */
+  width: 765px;
+  height: 608px;
+/* позиционирование */
+  position: absolute;
+  bottom: 0;
+  right: 0;
+/* вывел поверх квадрата, но за текстом */
+  z-index: 1;
+}
+
+/* задаем размер для логотипа,
+который можно будет использовать и в header и в footer */
+.logo {
+  width: 228px;
+  height: 32px;
+}
+
+/* позиционируем логотип в header абсолютно */
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
@@ -28,4 +120,6 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
+
 }
+
