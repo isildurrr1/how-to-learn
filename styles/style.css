@@ -40,7 +40,7 @@
 /* убрал все отсупы */
   margin: 0;
 /* задал ширину */
-  width: 730px;
+  max-width: 730px;
 /* вывел расположение на передний план */
   z-index: 2;
 /* настройки шрифта */
@@ -57,7 +57,7 @@
   bottom: 30px;
   left: 64px;
 /* задал ширину */
-  width: 388px;
+  max-width: 388px;
 /* вывел расположение на передний план */
   z-index: 2;
 /* настройки шрифта */
@@ -71,7 +71,25 @@
   text-decoration: none;
 /* задаю цвет шрифта */
   color: #2f80ed;
+  display: inline-block;
 }
+
+.header__link:after {
+  background-color: #2f80ed; /* Цвет линии при наведении на нее курсора мыши */
+  display: block;
+  content: "";
+  height: 2px; /* Высота линии */
+  width: 0%;
+  -webkit-transition: width .3s ease-in-out;
+  -moz--transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+}
+
+.header__link:hover:after,
+.header__link:focus:after {
+  width: 100%;
+}
+
 
 .header__main-illustration {
 /* задаю размер  */
@@ -165,7 +183,7 @@
 
 .section-title {
 /* задал размер заголовка */
-  width: 60%;
+  max-width: 60%;
 /* выравнивание по центру */
   display: flex;
   margin: auto;
@@ -182,7 +200,7 @@
 
 .section-subtitle {
 /* задал размер заголовка */
-  width: 60%;
+  max-width: 60%;
 /* выравнивание по центру */
   display: flex;
   margin: auto;
@@ -252,7 +270,7 @@
 
 .feynman__title {
 /* задал размеры и выравнил по центру */
-  width: 648px;
+  max-width: 648px;
   display: flex;
   margin: auto;
   justify-content: center;
@@ -287,6 +305,22 @@
   font-weight: normal;
   color: #2f80ed;
   text-decoration: none;
+}
+
+.feynman__link:after {
+  background-color: #2f80ed; /* Цвет линии при наведении на нее курсора мыши */
+  display: block;
+  content: "";
+  height: 2px; /* Высота линии */
+  width: 0%;
+  -webkit-transition: width .3s ease-in-out;
+  -moz--transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+}
+
+.feynman__link:hover:after,
+.feynman__link:focus:after {
+  width: 100%;
 }
 
 .kaufman {
@@ -382,4 +416,21 @@
 .footer__social-icon {
   width: 16px;
   height: 16px;
+}
+
+/* анимация при наведении на ссылку для футера */
+.footer__column-link_theme_dark:after {
+  background-color: white; /* Цвет линии при наведении на нее курсора мыши */
+  display: block;
+  content: "";
+  height: 2px; /* Высота линии */
+  width: 0%;
+  -webkit-transition: width .3s ease-in-out;
+  -moz--transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+}
+
+.footer__column-link_theme_dark:hover:after,
+.footer__column-link_theme_dark:focus:after {
+  width: 100%;
 }
