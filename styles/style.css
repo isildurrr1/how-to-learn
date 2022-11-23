@@ -77,6 +77,8 @@
 /* задаю размер  */
   width: 765px;
   height: 608px;
+  object-fit: cover;
+  object-position: right bottom;
 /* позиционирование */
   position: absolute;
   bottom: 0;
@@ -242,7 +244,7 @@
 
 .feynman {
 /* задал высоту */
-  height: 890px;
+  min-height: 890px;
 /* задал цвет и картинку для фона */
   background: #f2f2f2 url(../images/feynman.png) no-repeat left bottom;
   position: relative;
@@ -299,6 +301,8 @@
 }
 
 .kaufman__triangle {
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: contain;
   /* размеры */
   width: 877px;
   height: 877px;
@@ -325,30 +329,26 @@
   display: flex;
   margin: auto;
   justify-content: space-between;
-}
-
-.footer__column {
   /* цвет шрифта */
   color: white;
 }
 
-.column_content_copyright {
+
+.footer__column_content_copyright {
   /* базовый размер флекс элемента */
   flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .logo_place_footer {
   /* задаю картинку логотипа и выравниваю */
   background-image: url(../images/logo_place_footer.svg);
-  display: flex;
-  justify-content: flex-start;
 }
 
 .footer__author {
-  /* выравнивание по левому нижнему краю с отступами */
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  /* отступы */
   margin: 0;
   padding: 18px 0 18px 0;
   /* настройки шрифта */
