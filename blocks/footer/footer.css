@@ -1,0 +1,6 @@
+.footer {
+  /* размеры отступов (вверх и низ)*/
+  padding: 60px 0 40px 0;
+  /* цвет фона */
+  background-color: #1f1f1f;
+}

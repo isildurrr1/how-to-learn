@@ -1,0 +1,14 @@
+.section-subtitle {
+  /* задал размер заголовка */
+    max-width: 60%;
+  /* выравнивание по центру */
+    display: flex;
+    margin: auto;
+    justify-content: center;
+  /* отступ от заголовка */
+    margin-top: 20px;
+  /* настройки шрифта */
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: normal;
+  }

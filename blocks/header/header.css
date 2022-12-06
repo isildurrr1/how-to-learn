@@ -1,0 +1,15 @@
+.header {
+  /* установили ограничения для секции */
+    height: 100vh;
+    min-height: 600px;
+    max-height: 756px;
+  /* установили позиционирование */
+    position: relative;
+  /* установили цвет заднего фона */
+    background-color: #f2f2f2;
+  /* центрирование заголовка h1 по центру */
+    display: flex;
+    align-items: center;
+    padding-left: 64px;
+    overflow: hidden;
+  }

@@ -1,0 +1,12 @@
+.feynman__link {
+  /* выравнивание по центру и по праваму краю */
+    position: absolute;
+    right: 48px;
+    top: 50%;
+    /* настройки шрифта */
+    line-height: 51px;
+    font-size: 36px;
+    font-weight: normal;
+    color: #2f80ed;
+    text-decoration: none;
+  }

@@ -1,0 +1,10 @@
+.kaufman {
+  /* настройка отступов */
+  padding: 90px 0 90px 0;
+  /* для абс позиционирования чайлд элементов */
+  position: relative;
+  /* задаю цвет фона и скрываю выступающие элементы */
+  background-color: #1f1f1f;
+  overflow: hidden;
+  z-index: 1;
+}

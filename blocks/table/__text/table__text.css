@@ -1,0 +1,9 @@
+.table__text {
+  /* убрал отступы по умолчанию, а сверху добавил паддинг */
+    margin: 0;
+    padding-top: 20px;
+  /* настройки шрифта */
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: normal;
+  }

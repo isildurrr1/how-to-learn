@@ -1,0 +1,12 @@
+.section-title {
+  /* задал размер заголовка */
+    max-width: 60%;
+  /* выравнивание по центру */
+    display: flex;
+    margin: auto;
+    justify-content: center;
+  /* настройки шрифта */
+    line-height: 1.15;
+    font-size: 60px;
+    font-weight: 600;
+  }

@@ -1,0 +1,12 @@
+.header__title {
+  /* убрал все отсупы */
+    margin: 0;
+  /* задал ширину */
+    max-width: 730px;
+  /* вывел расположение на передний план */
+    z-index: 2;
+  /* настройки шрифта */
+    line-height: 96px;
+    font-size: 102px;
+    font-weight: 600;
+  }

@@ -1,0 +1,7 @@
+.feynman {
+  /* задал высоту */
+    min-height: 890px;
+  /* задал цвет и картинку для фона */
+    background: #f2f2f2 url(../../images/feynman.png) no-repeat left bottom;
+    position: relative;
+  }

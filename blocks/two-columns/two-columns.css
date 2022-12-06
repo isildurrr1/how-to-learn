@@ -1,0 +1,9 @@
+.two-columns {
+  /* задал ширину */
+    width: 80%;
+  /* выравнивание по центру страницы */
+    display: flex;
+    margin: auto;
+  /* расстояние между колонками */
+    justify-content: space-between;
+  }

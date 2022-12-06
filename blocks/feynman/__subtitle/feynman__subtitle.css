@@ -1,0 +1,11 @@
+.feynman__subtitle {
+  /* выравнивание по центру */
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding-top: 70px;
+    /* настройки шрифта */
+    line-height: 51px;
+    font-size: 36px;
+    font-weight: normal;
+  }

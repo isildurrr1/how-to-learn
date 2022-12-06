@@ -1,0 +1,23 @@
+.header__link {
+  /* убираю нижнее подчеркивание */
+    text-decoration: none;
+  /* задаю цвет шрифта */
+    color: #2f80ed;
+    display: inline-block;
+  }
+
+  .header__link:after {
+    background-color: #2f80ed; /* Цвет линии при наведении на нее курсора мыши */
+    display: block;
+    content: "";
+    height: 2px; /* Высота линии */
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+  }
+
+  .header__link:hover:after,
+  .header__link:focus:after {
+    width: 100%;
+  }

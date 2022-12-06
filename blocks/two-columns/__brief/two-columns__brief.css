@@ -1,0 +1,13 @@
+.two-columns__brief {
+  /* убрал отступы */
+    margin: 0;
+  /* задал ширину блока */
+    min-width: 175px;
+    max-width: 175px;
+  /* задал цвет шрифта */
+    color: #2f80ed;
+  /* настройки шрифта */
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: normal;
+  }

@@ -1,0 +1,12 @@
+.footer__columns {
+  /* для абс позиционирования чайлд элементов */
+  position: relative;
+  /* размеры и выравнивание */
+  min-height: 250px;
+  width: 90%;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  /* цвет шрифта */
+  color: white;
+}

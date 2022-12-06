@@ -1,0 +1,13 @@
+.header__main-illustration {
+  /* задаю размер  */
+    width: 765px;
+    height: 608px;
+    object-fit: cover;
+    object-position: right bottom;
+  /* позиционирование */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  /* вывел поверх квадрата, но за текстом */
+    z-index: 1;
+  }

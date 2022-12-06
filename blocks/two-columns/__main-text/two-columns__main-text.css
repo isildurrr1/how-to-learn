@@ -1,0 +1,14 @@
+.two-columns__main-text {
+  /* задал ширину */
+    width: 80%;
+    min-width: 784px;
+  /* расстояние между параграфами */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+  /* настройки шрифта */
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: normal;
+}
