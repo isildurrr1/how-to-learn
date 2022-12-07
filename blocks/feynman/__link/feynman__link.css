@@ -9,4 +9,26 @@
     font-weight: normal;
     color: #2f80ed;
     text-decoration: none;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .feynman__link:hover {
+    opacity: 70%;
+  }
+
+  .feynman__link:after {
+    background-color: #2f80ed; /* Цвет линии при наведении на нее курсора мыши */
+    display: block;
+    content: "";
+    height: 2px; /* Высота линии */
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    opacity: 70%;
+  }
+
+  .feynman__link:hover:after,
+  .feynman__link:focus:after {
+    width: 100%;
   }

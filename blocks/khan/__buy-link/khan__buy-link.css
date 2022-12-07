@@ -1,0 +1,30 @@
+.khan__buy-link {
+  height: 100%;
+  margin-left: 48px;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #2f80ed;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.khan__buy-link:hover {
+  opacity: 70%;
+}
+
+.khan__buy-link:after {
+  background-color: #2f80ed; /* Цвет линии при наведении на нее курсора мыши */
+  display: block;
+  content: "";
+  height: 2px; /* Высота линии */
+  width: 0%;
+  -webkit-transition: width .3s ease-in-out;
+  -moz--transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+}
+
+.khan__buy-link:hover:after,
+.khan__buy-link:focus:after {
+  width: 100%;
+}
